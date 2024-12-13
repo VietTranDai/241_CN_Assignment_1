@@ -413,7 +413,7 @@ if __name__ == "__main__":
     try:
         tracker_id = "-TK0001-0001"
         tracker_host = get_tracker_host()
-        tracker_port = 22236
+        tracker_port = int(input("Enter the tracker port (e.g. 22236): "))
 
         tracker_server = TrackerHTTPServer(tracker_id, tracker_host, tracker_port)
         tracker_server.start()
