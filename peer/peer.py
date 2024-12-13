@@ -217,7 +217,7 @@ if __name__ == "__main__":
     try:
         id = input("Enter the peer id: ")
         peer_ip, peer_port = get_peer_ip_host()
-        peer_port = 6884
+        peer_port = int(input(f"Enter the peer port (default: {peer_port}): ") or peer_port)
 
         tracker_url = input("Enter the tracker URL (e.g., http://192.168.1.5:22236): ")
 
